@@ -1,0 +1,87 @@
+/* General styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 10%;
+    border: 1px solid black;
+}
+
+.navbar {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.nav-item {
+    display: inline-block;
+}
+
+
+
+
+
+
+/* Welcome page specific */
+.welcome > * {
+    padding: 1.5%;
+}
+
+.home-flex {
+    display: flex;
+}
+
+#headshot {
+    width: 50%;
+}
+
+
+
+
+
+
+/* Resumé page specific */
+.info-box {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+
+}
+
+.resume-block {
+    width: 100%;
+    border: 1px solid black;
+
+}
+
+.resume-container {
+    width: 100%;
+    border: 1px solid black;
+
+}
+.resume-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid black;
+
+}
+
+.resume-item-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid black;
+}
