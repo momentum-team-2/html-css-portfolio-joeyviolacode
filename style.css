@@ -3,11 +3,37 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
 }
 
 body {
     margin: 0 10%;
     border: 1px solid black;
+}
+
+.home-flex-container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+nav > * {
+    margin: auto 5%;
 }
 
 .navbar {
@@ -20,6 +46,7 @@ body {
 
 .nav-item {
     display: inline-block;
+    margin: 0 10px;
 }
 
 
@@ -34,10 +61,12 @@ body {
 
 .home-flex {
     display: flex;
+    justify-content: ;
 }
 
 #headshot {
     width: 50%;
+    height: 100%;
 }
 
 
@@ -50,7 +79,7 @@ body {
     display: flex;
     justify-content: space-between;
     border: 1px solid black;
-
+    margin: 2%;
 }
 
 #contact {
@@ -69,12 +98,14 @@ body {
 .resume-container {
     width: 100%;
     border: 1px solid black;
+    margin: 2% 0 0 0;
 
 }
 .resume-item {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 95%;
+    margin: 2% auto;
     border: 1px solid black;
 
 }
@@ -84,4 +115,26 @@ body {
     justify-content: space-between;
     width: 100%;
     border: 1px solid black;
+}
+
+/* Projects section */
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-pane {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    margin: 1% 5%;
+}
+
+.project-img {
+    width: 50%;
+}
+
+.odd {
+    flex-direction: row-reverse;
 }
