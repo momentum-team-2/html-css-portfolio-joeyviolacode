@@ -1,3 +1,13 @@
+/* variables */
+:root {
+    --wall-color:  #EBEBEB;
+    --pane-color: #0BC9CD;
+    --nav-color: #5B4e77;
+    --border-color: #5B4e77;
+}
+
+
+
 /* General styling */
 * {
     box-sizing: border-box;
@@ -8,16 +18,20 @@
 
 html {
     height: 100%;
+    background-color: var(--wall-color);
 }
 
 a {
     text-decoration: none;
     color: black;
+}
+
+#nav-link, .project-links > a {
     font-size: 18px;
 }
 
 body {
-    margin: 0 10%;
+    margin: 0 10% 5% 10%;
     border: 1px solid black;
 }
 
@@ -28,8 +42,20 @@ body {
     justify-content: space-around;
 }
 
+.home-flex {
+    margin: 2%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 h1 {
     font-size: 35px;
+    margin: 3% 2% 1% 2%;
 }
 
 nav > * {
@@ -41,12 +67,19 @@ nav > * {
     height: 10vh;
     display: flex;
     justify-content: space-between;
+    background-color: var(--nav-color);
     border: 1px solid black;
+    color: white;
 }
 
 .nav-item {
     display: inline-block;
     margin: 0 10px;
+    color: white;
+}
+
+.nav-item > a {
+    color: white;
 }
 
 
@@ -61,7 +94,6 @@ nav > * {
 
 .home-flex {
     display: flex;
-    justify-content: ;
 }
 
 #headshot {
@@ -69,30 +101,39 @@ nav > * {
     height: 100%;
 }
 
+.welcome {
+    padding-left: 1%;
+}
 
 
 
 
 
 /* Resumé page specific */
+#resume-header {
+    margin: 2%;
+}
+
 .info-box {
     display: flex;
     justify-content: space-between;
-    border: 1px solid black;
     margin: 2%;
+    background-color: var(--pane-color);
+    border-radius: 5px;
 }
 
 #contact {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
-
+    justify-content: space-evenly;
+    margin-right: 2%;
+    text-align: right;
 }
 
-.resume-block {
-    width: 100%;
-    border: 1px solid black;
 
+.resume-block {
+    width: 98%;
+    margin: 1%;
 }
 
 .resume-container {
@@ -104,17 +145,29 @@ nav > * {
 .resume-item {
     display: flex;
     flex-direction: column;
-    width: 95%;
+    width: 91%;
     margin: 2% auto;
+    background-color: var(--pane-color);
+    padding: 2%;
+    border-radius: 5px;;
     border: 1px solid black;
+}
 
+.resume-item > p {
+    margin: 2% 4% 2% 4%;
 }
 
 .resume-item-header {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    border: 1px solid black;
+    width: 98%;
+    font-size: 22px;
+    margin: 1% 1% 2% 1%;
+    font-weight: 900;
+}
+
+#title {
+    margin: 0 1% 0 1%;
 }
 
 /* Projects section */
@@ -122,19 +175,44 @@ nav > * {
 .projects-container {
     display: flex;
     flex-direction: column;
+    padding-bottom: 2%;
 }
 
 .project-pane {
     border: 1px solid black;
+    border-radius: 5px;
     display: flex;
     justify-content: space-around;
-    margin: 1% 5%;
+    margin: 1% 2%;
+    background-color: var(--pane-color);
+}
+
+.project-pane > * {
+    flex: 1;
+    margin: 2%;
 }
 
 .project-img {
-    width: 50%;
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.project-text-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .odd {
     flex-direction: row-reverse;
+}
+
+@media-query {
+
 }
