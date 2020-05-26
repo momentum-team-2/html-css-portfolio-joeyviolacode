@@ -1,3 +1,15 @@
+/* 
+TODOs:
+
+Better spacing in some panes to give more whitespace
+Can I make the images live so updates to source files propogate into the thumbnails?
+Collapsible details on mobile resume page?
+Why aren't box-shadows working to give a little depth?
+Add hobbies page, at least to desktop version...many are coding/problem-solving-synergistic, so could be good to include.
+
+*/
+
+
 /* variables */
 :root {
     --wall-color:  #604243;
@@ -7,7 +19,10 @@
     --wallpaper-color: white;
 }
 
-/*:root {
+/*
+Alternate color schemes...from preliminary eyebleeders to things that just didn't quite work....
+
+:root {
   --wall-color:  #968693;
     --pane-color: #9f7f76;
     --nav-color: #42605F;
@@ -48,7 +63,7 @@ body {
 }
 
 .home-flex-container {
-    width: 100%
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -58,9 +73,10 @@ body {
 }
 
 .home-flex {
-    margin: 15% 2%;
+    margin: 10% 2%;
     border-radius: 5px;
     background-color: var(--wallpaper-color);
+    border: 1px solid black;
 }
 
 .pane {
@@ -119,18 +135,9 @@ nav > * {
     color: white;
 }
 
-
-
-
-
-
 /* Welcome page specific */
 .welcome > * {
     padding: 1.5%;
-}
-
-.home-flex-container {
-    
 }
 
 .home-flex {
@@ -139,7 +146,7 @@ nav > * {
 
 #headshot {
     width: 50%;
-    height: 100%;
+    height: auto;
 }
 
 .welcome {
@@ -147,10 +154,6 @@ nav > * {
     line-height: 1.4;
     font-weight: 500;
 }
-
-
-
-
 
 /* Resumé page specific */
 #resume-header {
@@ -197,13 +200,13 @@ nav > * {
     margin: 2% auto;
     background-color: var(--pane-color);
     padding: 2%;
-    border-radius: 5px;;
+    border-radius: 5px;
     border: 1px solid black;
     line-height: 1.3;
 }
 
 .resume-item > p {
-    margin: 2% 4% 2% 4%;
+    margin: 1% 4% 1% 4%;
 }
 
 .resume-item-header {
